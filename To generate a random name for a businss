@@ -1,0 +1,26 @@
+const word1 = {
+    1: "Crazy",
+    2: "Amazing",
+    3: "Fire"
+}
+const word2 = {
+    4: "Engines",
+    5: "Foods",
+    6: "Garments"
+}
+const word3 = {
+    7: "Bros",
+    8: "Ltd",
+    9: "Hub"
+}
+
+function randi (a,b) {
+    return Math.floor(Math.random()*(b-a)+a)
+} 
+
+let rand1 = randi(1,3)
+let rand2 = randi(4,7)
+let rand3 = randi(7,10)
+
+let business_name = word1[rand1] + " " + word2[rand2] + " " + word3[rand3];
+console.log(business_name);
