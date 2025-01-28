@@ -1,0 +1,62 @@
+//Creating a faulty calculator and creates the following wring mistakes.
+//Here the code basically makes mistakes when the number generaed by the 
+//random number generator is lesser than 0.11
+
+console.log("Faulty calculator")
+function sum(a,b)
+{
+    result=a+b;
+    console.log(result);
+
+}
+function sub(a,b)
+{
+    result=a-b;
+    console.log(result);
+    
+}
+function div(a,b)
+{
+    result=a/b;
+    console.log(result);
+    
+}
+function mul(a,b)
+{
+    result=a*b;
+    console.log(result);
+    
+}
+function expo(a,b)
+{
+    result=a**b;
+    console.log(result);
+    
+}
+// let a= readInt("Enter the number a");
+// let b=readInt("ENter the number b");
+let a=8;
+let b=10;
+if(Math.random()>0.1)
+{
+    console.log("Addition of two number is")
+    sub(a,b);
+    console.log("Multiplication of two number is")
+    sum(a,b);
+    console.log("Subration is two number is")
+    div(a,b);
+    console.log("division is two number is")
+    expo(a,b);
+    
+
+}
+else{
+    console.log("Addition of two number is")
+    sum(a,b);
+    console.log("Multiplication of two number is")
+    mul(a,b);
+    console.log("Subraction of two number is")
+    sub(a,b);
+    console.log("division of two number is")
+    div(a,b);
+}
